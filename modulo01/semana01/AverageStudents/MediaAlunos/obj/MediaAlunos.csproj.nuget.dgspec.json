@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj": {}
+    "C:\\Users\\djami\\source\\repos\\MediaAlunos\\MediaAlunos\\MediaAlunos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj": {
+    "C:\\Users\\djami\\source\\repos\\MediaAlunos\\MediaAlunos\\MediaAlunos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj",
-        "projectName": "Calculadora",
-        "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\djami\\source\\repos\\MediaAlunos\\MediaAlunos\\MediaAlunos.csproj",
+        "projectName": "MediaAlunos",
+        "projectPath": "C:\\Users\\djami\\source\\repos\\MediaAlunos\\MediaAlunos\\MediaAlunos.csproj",
         "packagesPath": "C:\\Users\\djami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\djami\\source\\repos\\MediaAlunos\\MediaAlunos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\djami\\AppData\\Roaming\\NuGet\\NuGet.Config",

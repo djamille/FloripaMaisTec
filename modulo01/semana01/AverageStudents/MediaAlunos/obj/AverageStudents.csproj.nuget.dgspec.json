@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj": {}
+    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\AverageStudents\\MediaAlunos\\AverageStudents.csproj": {}
   },
   "projects": {
-    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj": {
+    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\AverageStudents\\MediaAlunos\\AverageStudents.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj",
-        "projectName": "Calculadora",
-        "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\Calculadora.csproj",
+        "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\AverageStudents\\MediaAlunos\\AverageStudents.csproj",
+        "projectName": "AverageStudents",
+        "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\AverageStudents\\MediaAlunos\\AverageStudents.csproj",
         "packagesPath": "C:\\Users\\djami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\Calculadora\\Calculadora\\obj\\",
+        "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\AverageStudents\\MediaAlunos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\djami\\AppData\\Roaming\\NuGet\\NuGet.Config",
