@@ -1,0 +1,15 @@
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\bin\Debug\net6.0\ClassAndBuilder.exe
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\bin\Debug\net6.0\ClassAndBuilder.deps.json
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\bin\Debug\net6.0\ClassAndBuilder.runtimeconfig.json
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\bin\Debug\net6.0\ClassAndBuilder.dll
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\bin\Debug\net6.0\ClassAndBuilder.pdb
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.csproj.AssemblyReference.cache
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.AssemblyInfoInputs.cache
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.AssemblyInfo.cs
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.csproj.CoreCompileInputs.cache
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.dll
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\refint\ClassAndBuilder.dll
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.pdb
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ClassAndBuilder.genruntimeconfig.cache
+C:\Users\djami\source\repos\ClassAndBuilder\ClassAndBuilder\obj\Debug\net6.0\ref\ClassAndBuilder.dll
