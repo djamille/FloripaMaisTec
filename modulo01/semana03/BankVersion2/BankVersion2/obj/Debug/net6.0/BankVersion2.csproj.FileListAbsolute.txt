@@ -1,0 +1,15 @@
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\bin\Debug\net6.0\BankVersion2.exe
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\bin\Debug\net6.0\BankVersion2.deps.json
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\bin\Debug\net6.0\BankVersion2.runtimeconfig.json
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\bin\Debug\net6.0\BankVersion2.dll
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\bin\Debug\net6.0\BankVersion2.pdb
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.csproj.AssemblyReference.cache
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.AssemblyInfoInputs.cache
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.AssemblyInfo.cs
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.csproj.CoreCompileInputs.cache
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.dll
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\refint\BankVersion2.dll
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.pdb
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\BankVersion2.genruntimeconfig.cache
+C:\Users\djami\source\repos\BankVersion2\BankVersion2\obj\Debug\net6.0\ref\BankVersion2.dll

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\djami\\source\\repos\\EvenAndOdd\\EvenAndOdd\\EvenAndOdd.csproj",
+      "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\EvenAndOdd\\EvenAndOdd\\EvenAndOdd.csproj",
       "projectName": "EvenAndOdd",
-      "projectPath": "C:\\Users\\djami\\source\\repos\\EvenAndOdd\\EvenAndOdd\\EvenAndOdd.csproj",
+      "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\EvenAndOdd\\EvenAndOdd\\EvenAndOdd.csproj",
       "packagesPath": "C:\\Users\\djami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\djami\\source\\repos\\EvenAndOdd\\EvenAndOdd\\obj\\",
+      "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana01\\EvenAndOdd\\EvenAndOdd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\djami\\AppData\\Roaming\\NuGet\\NuGet.Config",
