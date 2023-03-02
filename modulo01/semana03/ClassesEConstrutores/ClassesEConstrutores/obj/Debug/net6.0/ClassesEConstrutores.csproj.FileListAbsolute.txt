@@ -1,0 +1,15 @@
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\bin\Debug\net6.0\ClassesEConstrutores.exe
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\bin\Debug\net6.0\ClassesEConstrutores.deps.json
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\bin\Debug\net6.0\ClassesEConstrutores.runtimeconfig.json
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\bin\Debug\net6.0\ClassesEConstrutores.dll
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\bin\Debug\net6.0\ClassesEConstrutores.pdb
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.csproj.AssemblyReference.cache
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.AssemblyInfoInputs.cache
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.AssemblyInfo.cs
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.csproj.CoreCompileInputs.cache
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.dll
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\refint\ClassesEConstrutores.dll
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.pdb
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ClassesEConstrutores.genruntimeconfig.cache
+C:\Users\djami\source\repos\ClassesEConstrutores\ClassesEConstrutores\obj\Debug\net6.0\ref\ClassesEConstrutores.dll
