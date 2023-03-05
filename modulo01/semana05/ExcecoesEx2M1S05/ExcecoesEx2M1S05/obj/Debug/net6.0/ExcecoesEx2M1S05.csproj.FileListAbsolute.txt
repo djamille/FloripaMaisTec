@@ -1,0 +1,15 @@
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\bin\Debug\net6.0\ExcecoesEx2M1S05.exe
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\bin\Debug\net6.0\ExcecoesEx2M1S05.deps.json
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\bin\Debug\net6.0\ExcecoesEx2M1S05.runtimeconfig.json
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\bin\Debug\net6.0\ExcecoesEx2M1S05.dll
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\bin\Debug\net6.0\ExcecoesEx2M1S05.pdb
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.csproj.AssemblyReference.cache
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.AssemblyInfoInputs.cache
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.AssemblyInfo.cs
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.csproj.CoreCompileInputs.cache
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.dll
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\refint\ExcecoesEx2M1S05.dll
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.pdb
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ExcecoesEx2M1S05.genruntimeconfig.cache
+C:\Users\djami\source\repos\ExcecoesEx2M1S05\ExcecoesEx2M1S05\obj\Debug\net6.0\ref\ExcecoesEx2M1S05.dll
