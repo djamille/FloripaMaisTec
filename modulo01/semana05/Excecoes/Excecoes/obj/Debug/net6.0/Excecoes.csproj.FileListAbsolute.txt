@@ -1,0 +1,15 @@
+C:\Users\djami\source\repos\Excecoes\Excecoes\bin\Debug\net6.0\Excecoes.exe
+C:\Users\djami\source\repos\Excecoes\Excecoes\bin\Debug\net6.0\Excecoes.deps.json
+C:\Users\djami\source\repos\Excecoes\Excecoes\bin\Debug\net6.0\Excecoes.runtimeconfig.json
+C:\Users\djami\source\repos\Excecoes\Excecoes\bin\Debug\net6.0\Excecoes.dll
+C:\Users\djami\source\repos\Excecoes\Excecoes\bin\Debug\net6.0\Excecoes.pdb
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.csproj.AssemblyReference.cache
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.AssemblyInfoInputs.cache
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.AssemblyInfo.cs
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.csproj.CoreCompileInputs.cache
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.dll
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\refint\Excecoes.dll
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.pdb
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\Excecoes.genruntimeconfig.cache
+C:\Users\djami\source\repos\Excecoes\Excecoes\obj\Debug\net6.0\ref\Excecoes.dll
