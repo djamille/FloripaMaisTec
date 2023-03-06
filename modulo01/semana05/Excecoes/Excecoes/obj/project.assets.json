@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\djami\\source\\repos\\Excecoes\\Excecoes\\Excecoes.csproj",
+      "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana05\\Excecoes\\Excecoes\\Excecoes.csproj",
       "projectName": "Excecoes",
-      "projectPath": "C:\\Users\\djami\\source\\repos\\Excecoes\\Excecoes\\Excecoes.csproj",
+      "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana05\\Excecoes\\Excecoes\\Excecoes.csproj",
       "packagesPath": "C:\\Users\\djami\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\djami\\source\\repos\\Excecoes\\Excecoes\\obj\\",
+      "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana05\\Excecoes\\Excecoes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\djami\\AppData\\Roaming\\NuGet\\NuGet.Config",
