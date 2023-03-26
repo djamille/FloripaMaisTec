@@ -2,20 +2,21 @@ using System.Globalization;
 using System.Text;
 using Escola.Controllers;
 using Escola.Models;
+using Escola.Dtos;
 
-//[M1S08] Exercicio 5- Criar classe AlunoRepository, contenco uma lista estática
+//[M1S08] Exercicio 5- Criar classe AlunoRepository, contendo uma lista estática
 namespace Escola.Repositories;
 
 public class AlunosRepository
 {
-    private static List<AlunoModels> lista = new List<AlunoModels>(){
-        new AlunoModels { Id = 1, Nome = "João Souza"},
-        new AlunoModels { Id = 2, Nome = "Maria da Silva"},
-        new AlunoModels { Id = 3, Nome = "José Lima"}
+    private static List<AlunoModel> lista = new List<AlunoModel>(){
+        new AlunoModel { Id = 1, Nome = "João Souza"},
+        new AlunoModel { Id = 2, Nome = "Maria da Silva"},
+        new AlunoModel { Id = 3, Nome = "José Lima"}
     };
 
 //[M1S08] Exercicio 6- Criar metodo para listar alunos
-    public List<AlunoModels> ListarAlunos(string filtroNome)
+    public List<AlunoModel> ListarAlunos(string filtroNome)
     {
 
         if (string.IsNullOrEmpty(filtroNome))
@@ -26,30 +27,30 @@ public class AlunosRepository
             .ToList();
     }
 
-    public Alunos? ObterAlunos(int id)
+    public AlunoModel? ObterAlunos(int id)
     {
         return lista.FirstOrDefault(x => x.Id == id);
     }
 
-    public Alunos AtualizarAlunos(int id, AlunosDto dto)
+    public AlunoModel AtualizarAlunos(int id, AlunoDto dto)
     {
 
         var Alunos = ObterAlunos(id);
-        lista.Remove(alunos);
+        lista.Remove(Alunos);
 
-        Alunos.CargaHoraria = dto.CargaHoraria;
+        Alunos.Id = dto.Id;
         Alunos.Nome = dto.Nome;
-        Alunos.DataDaAlteracao = DateTime.Now;
+        Alunos.DataDeAlteracao = DateTime.Now;
 
-        lista.Add(alunos);
+        lista.Add(Alunos);
 
-        return alunos;
+        return Alunos;
     }
 
-    public Alunos CriarDisciplina(AlunosDto dto)
+    public AlunoModel CriarAluno(AlunoDto dto)
     {
 
-        var Alunos = new Alunos();
+        var Alunos = new AlunoModel();
         Alunos.Id = GerarId();
         Alunos.Nome = dto.Nome;
 
@@ -58,7 +59,7 @@ public class AlunosRepository
         return Alunos;
     }
 
-    public void ExcluirDisciplina(int id)
+    public void ExcluirAluno(int id)
     {
         var Alunos = lista.FirstOrDefault(a => a.Id == id);
 

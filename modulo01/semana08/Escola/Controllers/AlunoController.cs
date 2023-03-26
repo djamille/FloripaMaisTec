@@ -1,21 +1,22 @@
 using Escola.Repositories;
+using Escola.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 //[M1S08] Exercicio 5- Criar classe AlunoRepository, contenco uma lista estática
-namespace Escola.Controller;
+namespace Escola.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class AlunosController{
+public class AlunoController : ControllerBase{
     
  //[M1S08] Exercicio 8- Criar endpoint na controller de alunos para listar os alunos da API   
     [HttpGet]
-    public IActionResult Listar(string? nome)
+    public IActionResult Listar(string? Nome)
     {
         var repository = new AlunosRepository();
-        var Alunos = repository.ListarAlunos(nome);
+        var alunos = repository.ListarAlunos(Nome);
 
-        return Ok(Alunos);
+        return Ok(alunos);
     }
  //[M1S08] Exercicio 9- Criar endpoint na controller de alunos para obter um aluno por Id
 
@@ -28,12 +29,12 @@ public class AlunosController{
             return BadRequest("Id deve ser maior que zero");
 
         var repository = new AlunosRepository();
-        var Alunos = repository.ObterAlunos(id);
+        var alunos = repository.ObterAlunos(id);
 
-        if (Alunos == null)
+        if (alunos == null)
             return NotFound();
 
-        return Ok(Alunos);
+        return Ok(alunos);
     }
 
      //[M1S08] Exercicio 10 - Crie um endpoint na controller de alunos para criar um novo aluno
@@ -42,8 +43,8 @@ public class AlunosController{
     public IActionResult Criar([FromBody] AlunoDto dto){
        
        var repository = new AlunosRepository();
-       var Alunos = repository.CriarAluno(dto);
-       return CreatedAtAction(nameof(AlunoController.Obter),  new { id = aluno.Id }, Alunos);
+       var alunos = repository.CriarAluno(dto);
+       return CreatedAtAction(nameof(AlunoController.Obter),  new { id = alunos.Id }, alunos);
     }
 
     [HttpPatch]
@@ -51,7 +52,7 @@ public class AlunosController{
     public IActionResult Atualizar(int id, [FromBody] AlunoDto dto)
     {
         var repository = new AlunosRepository();
-        var Alunos = repository.AtualizarAluno(id, dto);
+        var Alunos = repository.AtualizarAlunos(id, dto);
         return Ok(Alunos);
     }
 
@@ -62,7 +63,7 @@ public class AlunosController{
     public IActionResult Excluir(int id){
        
        var repository = new AlunosRepository();
-       repository.ExcluirAlunos(id);
+       repository.ExcluirAluno(id);
 
        return NoContent();
     }
