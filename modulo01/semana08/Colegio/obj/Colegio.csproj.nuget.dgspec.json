@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\djami\\FloripaMaisTec\\Colegio\\Colegio.csproj": {}
+    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana08\\Colegio\\Colegio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\djami\\FloripaMaisTec\\Colegio\\Colegio.csproj": {
+    "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana08\\Colegio\\Colegio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\Colegio\\Colegio.csproj",
+        "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana08\\Colegio\\Colegio.csproj",
         "projectName": "Colegio",
-        "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\Colegio\\Colegio.csproj",
+        "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana08\\Colegio\\Colegio.csproj",
         "packagesPath": "C:\\Users\\djami\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\Colegio\\obj\\",
+        "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana08\\Colegio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\djami\\AppData\\Roaming\\NuGet\\NuGet.Config",
