@@ -1,0 +1,7 @@
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\M1S09\obj\Debug\net7.0\M1S09.csproj.AssemblyReference.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\M1S09\obj\Debug\net7.0\M1S09.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\M1S09\obj\Debug\net7.0\M1S09.AssemblyInfoInputs.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\M1S09\obj\Debug\net7.0\M1S09.AssemblyInfo.cs
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\M1S09\obj\Debug\net7.0\M1S09.csproj.CoreCompileInputs.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\M1S09\obj\Debug\net7.0\M1S09.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\M1S09\obj\Debug\net7.0\M1S09.MvcApplicationPartsAssemblyInfo.cache

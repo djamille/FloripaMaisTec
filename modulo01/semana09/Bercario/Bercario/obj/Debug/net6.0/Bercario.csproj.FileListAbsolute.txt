@@ -1,0 +1,8 @@
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.csproj.AssemblyReference.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.AssemblyInfoInputs.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.AssemblyInfo.cs
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.csproj.CoreCompileInputs.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.RazorAssemblyInfo.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\Bercario\Bercario\obj\Debug\net6.0\Bercario.RazorAssemblyInfo.cs
