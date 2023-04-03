@@ -1,5 +1,6 @@
 namespace Escola.Dtos;
 
+//Objetyo de transferencia de dados. Define como os dados serão enviados pela rede
 public class AlunoDto
 {
 

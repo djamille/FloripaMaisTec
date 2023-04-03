@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PIZZARIA09.props" />
+</Project>
