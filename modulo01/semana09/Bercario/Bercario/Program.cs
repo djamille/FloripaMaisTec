@@ -1,10 +1,3 @@
-/*using System.Diagnostics.Metrics;
-using System;
-using Microsoft.EntityFrameworkCore;
-using static System.Net.Mime.MediaTypeNames;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using Bercario;
-*/
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -17,13 +10,8 @@ builder.Services.AddDbContext<BercarioContext>(options => options.UseSqlServer(b
 */
 var app = builder.Build();
 
-//Configure the HTTP request pipeline.
-/*if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-*/
+
+
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

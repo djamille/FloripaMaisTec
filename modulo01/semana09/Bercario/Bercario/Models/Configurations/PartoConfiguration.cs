@@ -9,6 +9,8 @@ namespace Bercario.Models.Configurations
         {
             builder.HasKey(x => x.Id);
 
+            builder.Property(p => p.MedicoId)
+                .HasColumnName("Medico_Id");
 
             builder.HasOne(x => x.Medico)
                     .WithMany(p => p.Partos)

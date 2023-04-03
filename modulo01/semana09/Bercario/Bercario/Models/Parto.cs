@@ -9,6 +9,6 @@
 
         //propriedade de navegação
         public virtual ICollection<Bebe> Bebes { get; set; }
-        public virtual Medico Medico { get; set; }   
+        public virtual Medico Medico { get; set; }
     }
 }

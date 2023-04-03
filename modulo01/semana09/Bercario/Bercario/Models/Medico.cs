@@ -1,4 +1,5 @@
-﻿namespace Bercario.Models
+﻿
+namespace Bercario.Models
 {    
     public class Medico
     {   

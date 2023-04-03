@@ -17,16 +17,16 @@ namespace Bercario.Models.Configurations
 
 
             builder.HasOne(x => x.Mae)
-                    .WithMany(p => p.Partos) //----------Bebes???????
+                    .WithMany(p => p.Bebes)
                     .HasForeignKey(x => x.MaeId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Mae_Parto");
+                    .HasConstraintName("FK__Mae_Bebe");
 
             builder.HasOne(x => x.Parto)
-                    .WithMany(p => p.Maes) //----------Bebes???????
+                    .WithMany(p => p.Bebes)
                     .HasForeignKey(x => x.PartoId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Parto_Mae");
+                    .HasConstraintName("FK__Parto_Bebe");
 
             builder.ToTable("Bebe");
         }
