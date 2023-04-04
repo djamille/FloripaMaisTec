@@ -1,0 +1,7 @@
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\PIZZARIA09\obj\Debug\net7.0\Pi.csproj.AssemblyReference.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\PIZZARIA09\obj\Debug\net7.0\Pi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\PIZZARIA09\obj\Debug\net7.0\Pi.AssemblyInfoInputs.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\PIZZARIA09\obj\Debug\net7.0\Pi.AssemblyInfo.cs
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\PIZZARIA09\obj\Debug\net7.0\Pi.csproj.CoreCompileInputs.cache
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\PIZZARIA09\obj\Debug\net7.0\Pi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\djami\FloripaMaisTec\modulo01\semana09\PIZZARIA09\obj\Debug\net7.0\Pi.MvcApplicationPartsAssemblyInfo.cache

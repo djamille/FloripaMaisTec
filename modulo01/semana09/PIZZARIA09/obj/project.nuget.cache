@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mVarT4vGVeI2MKjRDJyPw2twtjwytoJuKAKcA7uwqNZlVfIsBQMX8e7du4W0ZpqYy0vuZ73dWXZibynNzZtT+A==",
+  "dgSpecHash": "FEFXy6y1SflEvciQVxYVNE6M2f4evc2GYY35d7PaTw15Qcq/PtHWIITCYVFiu5A0yoWjo9RoCpEryMkI4og5fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana09\\PIZZARIA09\\PIZZARIA09.csproj",
+  "projectFilePath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana09\\PIZZARIA09\\Pi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\djami\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\djami\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

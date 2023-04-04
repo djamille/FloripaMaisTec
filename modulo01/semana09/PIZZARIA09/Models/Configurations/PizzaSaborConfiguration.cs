@@ -10,23 +10,23 @@ namespace PIZZARIA09.Models.Configurations
             builder.HasKey(e => e.Id).HasName("PK__PizzaSabor");
 
             builder.Property(p => p.PizzaId)
-                .HasColumnName("PizzaId");
+                .HasColumnName("Pizza_Id");
 
             builder.Property(p => p.SaboresId)
-                .HasColumnName("SaboresId");
-
+                .HasColumnName("Sabores_Id");
+            
 
             builder.HasOne(x => x.Pizza)
-                    .WithMany(p => p.PizzaSabor)
+                    .WithMany(p => p.PizzasSabores)
                     .HasForeignKey(x => x.PizzaId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Mae_Bebe");
+                    .HasConstraintName("FK__Pizza_Sabor");
 
             builder.HasOne(x => x.Sabores)
-                    .WithMany(p => p.Pizzas_Sabores)
+                    .WithMany(p => p.PizzasSabores)
                     .HasForeignKey(x => x.SaboresId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__Parto_Bebe");
+                    .HasConstraintName("FK__Sabor_Pizza");
 
             builder.ToTable("PizzaSabor");
         }

@@ -7,7 +7,7 @@
         public int SaboresId { get; set; }
 
         //propriedade de navegação
-        public virtual Pizza Pizzas { get; set; }
+        public virtual Pizza Pizza { get; set; }
         public virtual Sabores Sabores { get; set; }
     }
 }

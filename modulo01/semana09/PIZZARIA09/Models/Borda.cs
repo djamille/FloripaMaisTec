@@ -1,10 +1,11 @@
-﻿namespace PIZZARIA09.Models
-{
-    public class Borda
-    {
-        public int Id { get; set; }
-        public string NomeBorda { get; set; }
+﻿using System;
+using System.Collections.Generic;
 
-        public virtual ICollection<Pizza> Pizzas { get; set; }
-    }
+namespace PIZZARIA09.Models;
+
+public partial class Borda
+{
+    public int Id { get; set; }
+
+    public string? Nome { get; set; }
 }

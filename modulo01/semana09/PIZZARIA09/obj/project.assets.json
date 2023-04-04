@@ -3917,9 +3917,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana09\\PIZZARIA09\\PIZZARIA09.csproj",
-      "projectName": "PIZZARIA09",
-      "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana09\\PIZZARIA09\\PIZZARIA09.csproj",
+      "projectUniqueName": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana09\\PIZZARIA09\\Pi.csproj",
+      "projectName": "Pi",
+      "projectPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana09\\PIZZARIA09\\Pi.csproj",
       "packagesPath": "C:\\Users\\djami\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana09\\PIZZARIA09\\obj\\",
       "projectStyle": "PackageReference",

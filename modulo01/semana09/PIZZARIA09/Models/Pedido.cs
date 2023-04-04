@@ -1,15 +1,13 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
 
-namespace PIZZARIA09.Models
+namespace PIZZARIA09.Models;
+
+public partial class Pedido
 {
-    public class Pedido
-    {
-        public int Id { get; set; }
-        public int StatusId { get; set; }
-        public int PizzaId { get; set; }
+    public int Id { get; set; }
 
-        //propriedade de navegação
-        public virtual Pizza Pizza { get; set; }
-        public virtual Status Status { get; set; }
-    }
+    public string? IdPizza { get; set; }
+
+    public string? IdStatus { get; set; }
 }
