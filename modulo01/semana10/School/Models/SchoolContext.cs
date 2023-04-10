@@ -4,6 +4,7 @@ using Microsoft.IdentityModel.Tokens;
 using School.Models.Configuration;
 using School.Models;
 using System.IO;
+using Microsoft.AspNetCore.Components.Routing;
 
 namespace School.Models
 {

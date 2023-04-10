@@ -2,7 +2,7 @@
 
 namespace School.Models
 {
-    public class Teacher
+    public class Teacher             //Exercicio 2 M1S10 - Crie classes de model
     {
         public int Id { get; set; }
         public int UserId { get; set; }

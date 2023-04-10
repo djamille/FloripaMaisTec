@@ -1,6 +1,6 @@
 ﻿namespace School.Models
 {
-    public class Quiz
+    public class Quiz             //Exercicio 2 M1S10 - Crie classes de model
     {
         public int Id { get; set; }
         public int DisciplineId { get; set; }

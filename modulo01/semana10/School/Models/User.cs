@@ -1,6 +1,6 @@
 ﻿namespace School.Models
 {
-    public class User
+    public class User             //Exercicio 2 M1S10 - Crie classes de model
     {
         public int Id { get; set; }
         public string Name { get; set; }

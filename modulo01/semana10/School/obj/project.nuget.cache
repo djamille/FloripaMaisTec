@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hIzXrrdtHx8K8T5KfsWQghsabudUdiiDIn7UIEVjgS+DZBh57Fe5egC4pzq120cYA4ywIq778t+QAQXlXZkpjA==",
+  "dgSpecHash": "2lnZENwPBYDo9M07J80bSC8UEt70EJ+J3sN63vBCYI+Yfzc+fS/z758ZGD4b5ulYO4lv27qfKk7v6b4kq+qyzA==",
   "success": true,
   "projectFilePath": "C:\\Users\\djami\\FloripaMaisTec\\modulo01\\semana10\\School\\School.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,9 @@
     "C:\\Users\\djami\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\djami\\.nuget\\packages\\azure.storage.blobs\\12.15.1\\azure.storage.blobs.12.15.1.nupkg.sha512",
     "C:\\Users\\djami\\.nuget\\packages\\azure.storage.common\\12.14.1\\azure.storage.common.12.14.1.nupkg.sha512",
+    "C:\\Users\\djami\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\djami\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\djami\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\djami\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\djami\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.32\\microsoft.aspnetcore.cryptography.internal.3.1.32.nupkg.sha512",
     "C:\\Users\\djami\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\3.1.32\\microsoft.aspnetcore.dataprotection.3.1.32.nupkg.sha512",

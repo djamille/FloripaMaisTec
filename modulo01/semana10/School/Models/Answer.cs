@@ -1,8 +1,6 @@
-﻿using System.Reflection.Metadata;
-
-namespace School.Models
+﻿namespace School.Models
 {
-    public class Answer
+    public class Answer             //Exercicio 2 M1S10 - Crie classes de model
     {
         public int Id { get; set; }
         public int QuestionId { get; set; }

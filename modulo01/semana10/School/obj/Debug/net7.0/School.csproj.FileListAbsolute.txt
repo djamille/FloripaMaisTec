@@ -113,3 +113,6 @@ C:\Users\djami\FloripaMaisTec\modulo01\semana10\School\bin\Debug\net7.0\ko\Syste
 C:\Users\djami\FloripaMaisTec\modulo01\semana10\School\bin\Debug\net7.0\ru\System.Spatial.resources.dll
 C:\Users\djami\FloripaMaisTec\modulo01\semana10\School\bin\Debug\net7.0\zh-Hans\System.Spatial.resources.dll
 C:\Users\djami\FloripaMaisTec\modulo01\semana10\School\bin\Debug\net7.0\zh-Hant\System.Spatial.resources.dll
+C:\Users\djami\FloripaMaisTec\modulo01\semana10\School\bin\Debug\net7.0\FluentValidation.dll
+C:\Users\djami\FloripaMaisTec\modulo01\semana10\School\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\Users\djami\FloripaMaisTec\modulo01\semana10\School\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
