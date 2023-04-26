@@ -1,8 +1,7 @@
 using System.Globalization;
 using System.Text;
-using Escola.Controllers;
-using Escola.Models;
 using Escola.Dtos;
+using Escola.Models;
 
 namespace Escola.Repositories;
 
@@ -10,9 +9,9 @@ namespace Escola.Repositories;
 public class AlunosRepository
 {
     private static List<AlunoModel> lista = new List<AlunoModel>(){         //Lista estática criada com novas inclusões de AlunoModel
-        new AlunoModel { Id = 1, Nome = "João", DataNascimento = new DateTime(1984, 12, 13), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
-        new AlunoModel { Id = 2, Nome = "Maria joão", DataNascimento = new DateTime(1998, 01, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
-        new AlunoModel { Id = 3, Nome = "José", DataNascimento = new DateTime(2001, 10, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
+        new AlunoModel { Id = 1, Nome = "Joao", DataNascimento = new DateTime(1984, 12, 13), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
+        new AlunoModel { Id = 2, Nome = "Maria Joao", DataNascimento = new DateTime(1998, 01, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
+        new AlunoModel { Id = 3, Nome = "Jose", DataNascimento = new DateTime(2001, 10, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
         new AlunoModel { Id = 4, Nome = "Maria Clara", DataNascimento = new DateTime(1999, 11, 20), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
         new AlunoModel { Id = 5, Nome = "Pedro", DataNascimento = new DateTime(1990, 03, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
         new AlunoModel { Id = 6, Nome = "Cleber", DataNascimento = new DateTime(2009, 08, 13), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
@@ -32,13 +31,11 @@ public class AlunosRepository
         }
         else
         {
-            return lista.Where(z => z.Nome.ToLower().RemoverAcentos().Contains(filtroNome.ToLower().RemoverAcentos())) //Se for informado algum valor, retorna od dados referentes ao valor informado
+            return lista.Where(z => z.Nome.ToLower().Contains(filtroNome.ToLower()))                      //Se for informado algum valor, retorna od dados referentes ao valor informado
             .OrderBy(x => x.Id)                         //Ordena por Id
             .ToList();
         }
     }
-
-
     //[M1S08] Exercício 9- Criar método para obter aluno por Id
     public AlunoModel? ObterAlunos(int id)                          //'?' opcional
     {
@@ -89,20 +86,6 @@ public class AlunosRepository
     {
         return lista.Last().Id + 1;
     }
-
 }
 
-public static class StringExtension
-{
-    public static string RemoverAcentos(this string text)
-    {
-        StringBuilder sbReturn = new StringBuilder();
-        var arrayText = text.Normalize(NormalizationForm.FormD).ToCharArray();
-        foreach (char letter in arrayText)
-        {
-            if (CharUnicodeInfo.GetUnicodeCategory(letter) != UnicodeCategory.NonSpacingMark)
-                sbReturn.Append(letter);
-        }
-        return sbReturn.ToString();
-    }
-}
+
