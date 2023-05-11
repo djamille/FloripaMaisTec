@@ -1,0 +1,16 @@
+body{
+    background-color: #2727ff;
+    color:#fff;
+    border-radius: 10px;
+    padding: 8px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav{
+    color:#fff;
+}
+
+a{
+    color:#fff;
+}
