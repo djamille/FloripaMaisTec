@@ -1,14 +1,12 @@
-using System.Globalization;
-using System.Text;
 using Escola.Dtos;
 using Escola.Models;
 
 namespace Escola.Repositories;
 
-//[M1S08] Exercicio 5- Criar uma classe, contendo uma lista estática
+
 public class AlunosRepository
-{
-    private static List<AlunoModel> lista = new List<AlunoModel>(){         //Lista estática criada com novas inclusões de AlunoModel
+{/*
+    private static List<AlunoModel> lista = new List<AlunoModel>(){
         new AlunoModel { Id = 1, Nome = "Joao", DataNascimento = new DateTime(1984, 12, 13), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
         new AlunoModel { Id = 2, Nome = "Maria Joao", DataNascimento = new DateTime(1998, 01, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
         new AlunoModel { Id = 3, Nome = "Jose", DataNascimento = new DateTime(2001, 10, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
@@ -20,22 +18,27 @@ public class AlunosRepository
         new AlunoModel { Id = 9, Nome = "Veronica", DataNascimento = new DateTime(2011, 09, 15), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
         new AlunoModel { Id = 10, Nome = "Renan", DataNascimento = new DateTime(2015, 01, 01), DataInclusao = DateTime.Now, DataAlteracao = DateTime.Now },
     };
+    */
 
-
-    //[M1S08] Exercicio 6- Criar método para listar alunos
-    public List<AlunoModel> ListarAlunos(string filtroNome)
+    public List<AlunoModel> listarAlunos(string nome)
     {
-        if (string.IsNullOrEmpty(filtroNome))                       //Se for null ou vazia, retorna LISTA COMPLETA
+        if (string.IsNullOrEmpty(nome))                      
         {
             return lista;
         }
         else
         {
-            return lista.Where(z => z.Nome.ToLower().Contains(filtroNome.ToLower()))                      //Se for informado algum valor, retorna od dados referentes ao valor informado
-            .OrderBy(x => x.Id)                         //Ordena por Id
+            return lista.Where(z => z.Nome.ToLower().Contains(nome.ToLower()))       
+            .OrderBy(x => x.Id)                        
             .ToList();
         }
     }
+
+
+
+
+
+
     //[M1S08] Exercício 9- Criar método para obter aluno por Id
     public AlunoModel? ObterAlunos(int id)                          //'?' opcional
     {
@@ -87,5 +90,4 @@ public class AlunosRepository
         return lista.Last().Id + 1;
     }
 }
-
 

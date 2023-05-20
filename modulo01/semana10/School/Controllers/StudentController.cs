@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using School.Repositories;
 using School.Repositories.Interfaces;
-using static School.Dtos.StudentDto;
 using School.Models;
+using School.Context;
+using School.Dtos;
 
 namespace School.Controllers;
 
@@ -12,40 +12,65 @@ namespace School.Controllers;
 [Route("[controller]")]
 public class StudentController : ControllerBase
 {
-    private readonly IStudentRepository _studentRepository;
+    private readonly SchoolContext _context;
 
 
-    public StudentController(IStudentRepository StudentRepository)
+    public StudentController(SchoolContext context)
     {
-        _studentRepository = StudentRepository;
+        _context = context;
     }
 
 
     //Endpoint CRIAR
     [HttpPost]
-    public ActionResult<Student> Create(Student student)
+    public ActionResult Create([FromBody] CreateStudentDto createStudentDto)
     {
-        _studentRepository.Create(student);
+        var studentIn = new Student();
+        studentIn.UserId = createStudentDto.UserId;
+        studentIn.Period = createStudentDto.Period;
+        studentIn.RA = createStudentDto.RA;
+      
 
-        return CreatedAtAction(nameof(StudentController), new { id = student.Id }, student);
+
+        _context.Students.Add(studentIn);
+        _context.SaveChanges();
+
+        var studentOut = new OutStudentDto();
+        studentOut.Id = studentIn.Id;
+        studentOut.UserId = studentIn.UserId;
+        studentOut.Period = studentIn.Period;
+        studentOut.RA = studentIn.RA;
+        
+        return Ok(studentOut);
     }
 
 
     //Endpoint ATUALIZAR
     [HttpPut]
     [Route("{id}")]
-    public IActionResult Update(int id, [FromBody] AlterStudentDto StudentDto)
+    public IActionResult Update(int Id, [FromBody] AlterStudentDto alterStudentDto)
     {
-        var student = _studentRepository.GetById(id);
+        var studentIn = _context.Students.FirstOrDefault(x => x.Id.Equals(Id)); ;
 
-        if (student == null)
+        if (studentIn == null)
+        {
             return NotFound();
+        }
 
-        student.UserId = StudentDto.UserId;
-        student.Period = StudentDto.Period;
-        student.RA = StudentDto.RA;
+        studentIn.Period = alterStudentDto.Period;
+        studentIn.RA = alterStudentDto.RA;
 
-        return CreatedAtAction(nameof(StudentController.Get), new { id = student.Id }, student);
+
+        _context.Students.Update(studentIn);
+        _context.SaveChanges();
+
+        var studentOut = new OutStudentDto();
+        studentOut.Id = studentIn.Id;
+        studentOut.UserId = studentIn.UserId;
+        studentOut.Period = studentIn.Period;
+        studentOut.RA = studentIn.RA;
+
+        return CreatedAtAction(nameof(AnswerController.Get), new { id = studentIn.Id }, studentOut);
     }
 
 
@@ -53,38 +78,123 @@ public class StudentController : ControllerBase
     [HttpGet]
     public IActionResult Get()
     {
-        var student = _studentRepository.List();
-        return Ok(student);
+        var studentIn = _context.Students.ToList();
+        if (studentIn == null)
+        {
+            return NotFound();                     //Se for nulo retorna erro
+        }
+        return Ok(studentIn);
     }
 
 
     //Endpoint OBTER POR ID
     [HttpGet]
     [Route("{id}")]
-    public IActionResult Get(int id)
+    public IActionResult Get(int Id)
     {
-        var student = _studentRepository.GetById(id);
+        var studentIn = _context.Students.FirstOrDefault(x => x.Id.Equals(Id));
 
-        if (student == null)
+        if (studentIn == null)
+        {
             return NotFound();
+        }
 
-        return Ok(student);
+        return Ok(studentIn);
     }
 
 
     //Endpoint EXCLUIR
     [HttpDelete]
     [Route("{id}")]
-    public IActionResult DeleteStudent(int id)
+    public IActionResult DeleteDiscipline(int Id)
     {
-        var student = _studentRepository.GetById(id);
-        if (student == null)
+        var studentIn = _context.Students.FirstOrDefault(x => x.Id.Equals(Id));
+
+        if (studentIn == null)
         {
             return NotFound();
         }
 
-        _studentRepository.Delete(id);
+        _context.Students.Remove(studentIn);                           //Chamando método
+        _context.SaveChanges();                           //Salvando
 
         return NoContent();
     }
 }
+/*
+private readonly IStudentRepository _studentRepository;
+
+
+public StudentController(IStudentRepository StudentRepository)
+{
+    _studentRepository = StudentRepository;
+}
+
+
+//Endpoint CRIAR
+[HttpPost]
+public ActionResult<Student> Create(Student student)
+{
+    _studentRepository.Create(student);
+
+    return CreatedAtAction(nameof(StudentController), new { id = student.Id }, student);
+}
+
+
+//Endpoint ATUALIZAR
+[HttpPut]
+[Route("{id}")]
+public IActionResult Update(int id, [FromBody] AlterStudentDto StudentDto)
+{
+    var student = _studentRepository.GetById(id);
+
+    if (student == null)
+        return NotFound();
+
+    student.UserId = StudentDto.UserId;
+    student.Period = StudentDto.Period;
+    student.RA = StudentDto.RA;
+
+    return CreatedAtAction(nameof(StudentController.Get), new { id = student.Id }, student);
+}
+
+
+//Endpoint LISTAR
+[HttpGet]
+public IActionResult Get()
+{
+    var student = _studentRepository.List();
+    return Ok(student);
+}
+
+
+//Endpoint OBTER POR ID
+[HttpGet]
+[Route("{id}")]
+public IActionResult Get(int id)
+{
+    var student = _studentRepository.GetById(id);
+
+    if (student == null)
+        return NotFound();
+
+    return Ok(student);
+}
+
+
+//Endpoint EXCLUIR
+[HttpDelete]
+[Route("{id}")]
+public IActionResult DeleteStudent(int id)
+{
+    var student = _studentRepository.GetById(id);
+    if (student == null)
+    {
+        return NotFound();
+    }
+
+    _studentRepository.Delete(id);
+
+    return NoContent();
+}
+}*/

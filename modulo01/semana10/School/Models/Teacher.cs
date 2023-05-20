@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace School.Models
+﻿namespace School.Models
 {
     public class Teacher             //Exercicio 2 M1S10 - Crie classes de model
     {

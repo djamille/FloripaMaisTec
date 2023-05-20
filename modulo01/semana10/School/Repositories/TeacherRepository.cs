@@ -1,6 +1,7 @@
-﻿using School.Models;
+﻿using School.Context;
+using School.Models;
 using School.Repositories.Interfaces;
-using SchoolContext = School.Context.SchoolContext;
+
 
 namespace School.Repositories;
 

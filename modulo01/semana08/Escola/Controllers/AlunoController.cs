@@ -10,14 +10,14 @@ namespace Escola.Controllers;
 [Route("[controller]")]         //Customização de url
 public class AlunoController : ControllerBase
 {
-
+    
 
     //[M1S08] Exercício 8- Criar endpoint na controller de alunos para listar os alunos por nome  
     [HttpGet]                      //Busca dados
     public IActionResult Listar(string? Nome)                             //Criando EndPoint. 'IActionResult' é utilizado pois varios podem ser o tipo de retorno válido             
     {
         var repository = new AlunosRepository();                    //Nomeando variável e criando objeto
-        var alunos = repository.ListarAlunos(Nome);                     //Nomeando variável e chamando método
+        var alunos = repository.listarAlunos(Nome);                     //Nomeando variável e chamando método
 
         return Ok(alunos);                  //O 'OK' deve retornar o 'ObjectResult' que deve ser o status code 200 - Sucesso
     }

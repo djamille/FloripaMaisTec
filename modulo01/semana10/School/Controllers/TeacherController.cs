@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using School.Context;
+using School.Dtos;
 using School.Models;
-using School.Repositories;
-using School.Repositories.Interfaces;
-using static School.Dtos.TeacherDto;
 
 namespace School.Controllers;
 
@@ -12,7 +11,111 @@ namespace School.Controllers;
 [Route("[controller]")]
 public class TeacherController : ControllerBase
 {
-    private readonly ITeacherRepository _teacherRepository;
+    private readonly SchoolContext _context;
+
+
+    public TeacherController(SchoolContext context)
+    {
+        _context = context;
+    }
+
+
+    //Endpoint CRIAR
+    [HttpPost]
+    public ActionResult Create([FromBody] CreateTeacherDto createTeacherDto)
+    {
+        var teacherIn = new Teacher();
+        teacherIn.UserId = createTeacherDto.UserId;
+        teacherIn.Department = createTeacherDto.Department;
+        
+        _context.Teachers.Add(teacherIn);
+        _context.SaveChanges();
+
+        var teacherOut = new OutTeacherDto();
+        teacherOut.Id = teacherIn.Id;
+        teacherOut.UserId = teacherIn.UserId;
+        teacherOut.Department = teacherIn.Department;
+
+
+        return Ok(teacherOut);
+    }
+
+
+    //Endpoint ATUALIZAR
+    [HttpPut]
+    [Route("{id}")]
+    public IActionResult Update(int Id, [FromBody] AlterTeacherDto alterTeacherDto)
+    {
+        var teacherIn = _context.Teachers.FirstOrDefault(x => x.Id.Equals(Id)); ;
+
+        if (teacherIn == null)
+        {
+            return NotFound();
+        }
+
+        teacherIn.Department = alterTeacherDto.Department;
+
+        _context.Teachers.Update(teacherIn);
+        _context.SaveChanges();
+
+        var teacherOut = new OutTeacherDto();
+        teacherOut.Id = teacherIn.Id;
+        teacherOut.UserId = teacherIn.UserId;
+        teacherOut.Department = teacherIn.Department;
+        
+
+        return CreatedAtAction(nameof(AnswerController.Get), new { id = teacherIn.Id }, teacherOut);
+    }
+
+
+    //Endpoint LISTAR
+    [HttpGet]
+    public IActionResult Get()
+    {
+        var teacherIn = _context.Teachers.ToList();
+        if (teacherIn == null)
+        {
+            return NotFound();                     //Se for nulo retorna erro
+        }
+        return Ok(teacherIn);
+    }
+
+
+    //Endpoint OBTER POR ID
+    [HttpGet]
+    [Route("{id}")]
+    public IActionResult Get(int Id)
+    {
+        var teacherIn = _context.Teachers.FirstOrDefault(x => x.Id.Equals(Id)); ;
+
+        if (teacherIn == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(teacherIn);
+    }
+
+
+    //Endpoint EXCLUIR
+    [HttpDelete]
+    [Route("{id}")]
+    public IActionResult DeleteAnswer(int Id)
+    {
+        var teacherIn = _context.Teachers.FirstOrDefault(x => x.Id.Equals(Id)); ;
+
+        if (teacherIn == null)
+        {
+            return NotFound();
+        }
+
+        _context.Teachers.Remove(teacherIn);                           //Chamando método
+        _context.SaveChanges();                           //Salvando
+
+        return NoContent();
+    }
+}
+/*private readonly ITeacherRepository _teacherRepository;
 
 
     public TeacherController(ITeacherRepository TeacherRepository)
@@ -87,3 +190,4 @@ public class TeacherController : ControllerBase
         return NoContent();
     }
 }
+*/

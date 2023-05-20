@@ -1,6 +1,4 @@
-﻿using System.IO;
-
-namespace School.Models
+﻿namespace School.Models
 {
     public class Student_Discipline
     {

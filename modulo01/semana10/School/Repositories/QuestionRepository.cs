@@ -1,10 +1,7 @@
-﻿using FluentValidation;
-using System.Reflection.Metadata;
-using School.Context;
+﻿using School.Context;
 using School.Models;
 using School.Repositories.Interfaces;
-using School.Dtos;
-using SchoolContext = School.Context.SchoolContext;
+
 
 namespace School.Repositories;
 

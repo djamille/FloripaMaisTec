@@ -8,7 +8,9 @@
   <title>Exercicios</title>
 </head>
 <body>
-  <header id="header">
+
+  <!-- Exercicio 01 - semana 02-->
+  <header id="header">                   
     <section class="logo">
       <img src="cursoemvideo-logo-branca.png">
     </section>
@@ -34,7 +36,10 @@
         <img src="guanabara1.png" style="width: 100%">
       </section>
     </section>
-    <section id="sobre">
+
+  <!-- Exercicio 01 - semana 02 (seções representado cada um dos links no cabeçalho )-->
+  <!-- Exercicio 02 - semana 02 (construir a seção Sobre do site )-->
+      <section id="sobre">
       <h3>Sobre</h3>
       <div class="sobreDiv">
         <section class="parte1">
@@ -57,6 +62,8 @@
         </section>
       </div>
     </section>
+
+  <!-- Exercicio 03 - semana 02 (construir a seção Oportunidades do site )-->  
     <section id="oportunidades">
       <h3>Oportunidades</h3>
       <div class="oportDiv">
@@ -71,10 +78,16 @@
         </div>
       </div>
     </section>
+
+    <!-- Exercicio 04 - semana 02 (construir a seção Oportunidades do site )-->  
     <section id="metodologia">
       <h3>Metodologia</h3>
-      <p>rfvyitbouyi</p>
+      <section class="metodo">
+        <img src="Metodologia.jpeg">
+      </section>      
     </section>
+
+    <!-- Exercicio 05 - semana 02 (construir a seção Oportunidades do site )-->  
     <section id="ementa">
       <h3>Ementa</h1>
         <div class="table">
@@ -111,38 +124,89 @@
             </table>
         </div>
     </section>
+
+    <!-- Exercicio 06 - semana 02 (construir a seção Oportunidades do site )-->  
     <section id="projetos">
       <h3>Projetos</h3>
-      <div class="projDiv">
-
-
+      <div class="Projetos">
+        <div class="proj1">
+          <img src="brafe.jpeg" height="150px">
+          <p>Projeto criado no curso de CSS Avançado Posicionamento.</p>
+        </div>
+        <div class="proj2">
+          <p>Projeto criado no curso de React Completo.</p>
+          <img src="dog.jpeg" height="150px">
+        </div>
+        <div class="proj3">
+          <img src="devFront.jpeg" height="150px">
+          <p>Projeto criado no curso de UI Desing e HTML/CSS para Iniciantes.</p>
+        </div>
       </div>
     </section>
+
+    <!-- Exercicio 07 - semana 02 (construir a seção Oportunidades do site )-->  
     <section id="depoimentos">
       <h3>Depoimentos</h3>
       <div class="depDiv">
         <div class="card">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!--<iframe width="280" height="205" src="https://www.youtube.com/watch?v=jgQjeqGRdgA"></iframe>-->
+          <iframe width="280" height="200" src="https://www.youtube.com/embed/vuV3HuULRLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Djamille Vieira</p>
+            <p>Curso Java</p>
         </div>
         <div class="card">
-            <p>Lorem ipsum</p>
+          <iframe width="280" height="200" src="https://www.youtube.com/embed/vuV3HuULRLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>Djamille Vieira</p>
+          <p>Curso Java</p>
         </div>
         <div class="card">
-            <p>Lorem ipsum</p>
+          <iframe width="280" height="200" src="https://www.youtube.com/embed/vuV3HuULRLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>Djamille Vieira</p>
+          <p>Curso Java</p>
         </div>
       </div>
     </section>
-    <section id="duvidas">
+
+    <!-- Exercicio 08 - semana 02 (construir a seção Oportunidades do site )-->  
+    <section id="dúvidas">
       <h3>Dúvidas</h3>
       <div class="duvDiv">
         <form>
-          <input type="number" placeholder="Digite o salário bruto" id="salarioBruto" value="1000" />
-          <button type="button" onclick="calcularFgts()">Calcular FGTS</button>
+          <fieldset>
+            <label for="nome">Nome Completo</label>
+            <input id="nome" type="text" required minlength="4" maxlength="80">
+          </fieldset>
+          <fieldset>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+          </fieldset>
+          <fieldset>
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="number">
+          </fieldset>
+          <fieldset>
+            <label for="duvida">Dúvida</label>
+            <input id="duvida" type="text">
+          </fieldset>
+          <div class="botoes-form">
+            <button id="btn-enviar">Enviar</button>
+          </div>
         </form>
       </div>    
     </section>
+
+    <!-- Exercicio 01 - semana 02-->
     <footer>
-      <a href="#header">topo</a>
+      <header>
+        <section class="logoRodape">
+          <img src="cursoemvideo-logo-branca.png" alt="foto" style=" width: 100%;">
+        </section>
+        <nav id="footer">
+          <a href="">Direitos autorais</a>
+          <a href="">Termos de uso</a>
+          <a href="">Políticas de Privacidade</a>
+        </nav>
+    </header>
     </footer>
   </main>
 </body>

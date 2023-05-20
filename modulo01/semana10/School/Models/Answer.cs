@@ -12,6 +12,5 @@
 
         public virtual Question Question { get; set; }
         public virtual Student Student { get; set; }
-
     }
 }

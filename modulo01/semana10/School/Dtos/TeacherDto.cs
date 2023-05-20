@@ -1,18 +1,18 @@
-﻿namespace School.Dtos
-{
-    public class TeacherDto
-    {
-        public class CreateTeacherDto
-        {
-            public int UserId { get; set; }
-            public string Department { get; set; }
-        }
-        
+﻿namespace School.Dtos;
 
-        public class AlterTeacherDto
-        {
-            public int UserId { get; set; }
-            public string Department { get; set; }
-        }
-    }
+public class CreateTeacherDto
+{
+    public int UserId { get; set; }
+    public string Department { get; set; }
+}
+
+public class AlterTeacherDto
+{
+    public string Department { get; set; }
+}
+public class OutTeacherDto
+{
+    public int Id { get; set; }
+    public int UserId { get; set; }
+    public string Department { get; set; }
 }

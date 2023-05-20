@@ -1,40 +1,73 @@
-﻿using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using School.Models.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
 using School.Models;
-using System.IO;
-using Microsoft.AspNetCore.Components.Routing;
+using School.Models.Configuration;
 
-namespace School.Models
+namespace School.Context;
+
+public class SchoolContext : DbContext
 {
-    public class SchoolContext : DbContext
+    public DbSet<Answer> Answers { get; set; }
+    public DbSet<Discipline> Disciplines { get; set; }
+    public DbSet<Question> Questions { get; set; }
+    public DbSet<Quiz> Quizzes { get; set; }
+    public DbSet<Student> Students { get; set; }
+    public DbSet<Student_Discipline> Students_Disciplines { get; set; }
+    public DbSet<Teacher> Teachers { get; set; }
+    public DbSet<User> Users { get; set; }
+
+    /*
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        public DbSet<Answer> Answers { get; set; }
-        public DbSet<Discipline> Disciplines { get; set; }
-        public DbSet<Question> Questions { get; set; }
-        public DbSet<Quiz> Quizzes { get; set; }
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Student_Discipline> Students_Disciplines { get; set; }
-        public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<User> Users { get; set; }
+        optionsBuilder.UseSqlServer("Data Source=MILLE\\SQLEXPRESS;Database=School;User ID=sa;Password=220202;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+    }
+    */
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfiguration(new AnswerConfiguration());
+        modelBuilder.ApplyConfiguration(new DisciplineConfiguration());
+        modelBuilder.ApplyConfiguration(new QuestionConfiguration());
+        modelBuilder.ApplyConfiguration(new QuizConfiguration());
+        modelBuilder.ApplyConfiguration(new StudentConfiguration());
+        modelBuilder.ApplyConfiguration(new Student_DisciplineConfiguration());
+        modelBuilder.ApplyConfiguration(new TeacherConfiguration());
+        modelBuilder.ApplyConfiguration(new UserConfiguration());
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Data Source=MILLE\\SQLEXPRESS;Database=School;User ID=sa;Password=220202;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
-        }
+        modelBuilder.Entity<Answer>().HasData(
+            new Answer { Id = 1, QuestionId = 1, StudentId = 1, Answers = "Segunda-feira", Score = 1, Observation = "" },
+            new Answer { Id = 2, QuestionId = 2, StudentId = 1, Answers = "Ler e montar quebra-cabeças", Score = 2, Observation = "" },
+            new Answer { Id = 3, QuestionId = 3, StudentId = 1, Answers = "Biologia", Score = 1, Observation = "" });
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.ApplyConfiguration(new AnswerConfiguration());
-            modelBuilder.ApplyConfiguration(new DisciplineConfiguration());
-            modelBuilder.ApplyConfiguration(new QuestionConfiguration());
-            modelBuilder.ApplyConfiguration(new QuizConfiguration());
-            modelBuilder.ApplyConfiguration(new StudentConfiguration());
-            modelBuilder.ApplyConfiguration(new Student_DisciplineConfiguration());
-            modelBuilder.ApplyConfiguration(new TeacherConfiguration());
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
-        }
+        modelBuilder.Entity<Discipline>().HasData(
+            new Discipline { Id = 1, TeacherId = 1, NameDiscipline = "Biologia" },
+            new Discipline { Id = 2, TeacherId = 2, NameDiscipline = "Português" },
+            new Discipline { Id = 3, TeacherId = 3, NameDiscipline = "Matemática" });
 
+        modelBuilder.Entity<Question>().HasData(
+            new Question { Id = 1, QuizId = 1, Enunciation = "Qual o dia da semana que você mais gosta?", Weight = 1 },
+            new Question { Id = 2, QuizId = 1, Enunciation = "Qual seu hobbie?", Weight = 2 },
+            new Question { Id = 3, QuizId = 1, Enunciation = "Qual a sua matéria favorita?", Weight = 1 });
+
+        modelBuilder.Entity<Quiz>().HasData(
+            new Quiz { Id = 1, DisciplineId = 1, Title = "Conhecendo o aluno?" });
+
+        modelBuilder.Entity<Student>().HasData(
+            new Student { Id = 1, UserId = 1, Period = 1, RA = 11548 },
+            new Student { Id = 2, UserId = 2, Period = 1, RA = 14999 },
+            new Student { Id = 3, UserId = 3, Period = 2, RA = 15129 });
+
+        modelBuilder.Entity<Student_Discipline>().HasData(
+            new Student_Discipline { Id = 1, DisciplineId = 1, StudentId = 1 },
+            new Student_Discipline { Id = 2, DisciplineId = 1, StudentId = 2 },
+            new Student_Discipline { Id = 3, DisciplineId = 1, StudentId = 3 });
+
+        modelBuilder.Entity<Teacher>().HasData(
+            new Teacher { Id = 1, UserId = 1, Department = "" },
+            new Teacher { Id = 2, UserId = 2, Department = "" },
+            new Teacher { Id = 3, UserId = 3, Department = "" });
+
+        modelBuilder.Entity<User>().HasData(
+            new User { Id = 1, Name = "Bart Simpson", Email = "bart@hotmail.com", CPF = 118397500 },
+            new User { Id = 2, Name = "Meggie Simpson", Email = "meggie@hotmail.com", CPF = 171589470 },
+            new User { Id = 3, Name = "Lisa Simpson", Email = "lisa@hotmail.com", CPF = 637012100 });
     }
 }

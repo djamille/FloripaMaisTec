@@ -1,0 +1,26 @@
+h1 {
+    color:rgb(159, 186, 245)
+}
+h2 {
+    color:rgb(159, 186, 245)
+}
+h4 {
+    color:rgb(159, 186, 245);
+    
+}
+p {
+    color:rgb(159, 186, 245)
+}
+body { 
+    background-image: url('fundoTec.jpg');
+    display: flex;
+    justify-content: center;
+}
+div.quadrado{
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+div#q1 {
+    background-image: url('eu.jpeg');
+}

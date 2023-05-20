@@ -1,8 +1,7 @@
-﻿using School.Repositories.Interfaces;
-using Microsoft.AspNetCore.Mvc;
-using static School.Dtos.DisciplineDto;
+﻿using Microsoft.AspNetCore.Mvc;
 using School.Models;
-using School.Repositories;
+using School.Context;
+using School.Dtos;
 
 namespace School.Controllers;
 
@@ -12,15 +11,112 @@ namespace School.Controllers;
 [Route("[controller]")]
 public class DisciplineController : ControllerBase
 {
-    private readonly IDisciplineRepository _disciplineRepository;
+    private readonly SchoolContext _context;
 
 
-    public DisciplineController(IDisciplineRepository DisciplineRepository)
+    public DisciplineController(SchoolContext context)
     {
-        _disciplineRepository = DisciplineRepository;
+        _context = context;
     }
 
 
+    //Endpoint CRIAR
+    [HttpPost]
+    public ActionResult Create([FromBody] CreateDisciplineDto createDisciplineDto)
+    {
+        var disciplineIn = new Discipline();
+        disciplineIn.TeacherId = createDisciplineDto.TeacherId;
+        disciplineIn.NameDiscipline = createDisciplineDto.NameDiscipline;
+        
+
+        _context.Disciplines.Add(disciplineIn);
+        _context.SaveChanges();
+
+        var disciplineOut = new OutDisciplineDto();
+        disciplineOut.Id = disciplineIn.Id;
+        disciplineOut.TeacherId = disciplineIn.TeacherId;
+        disciplineOut.NameDiscipline = disciplineIn.NameDiscipline;
+        
+        return Ok(disciplineOut);
+    }
+
+
+    //Endpoint ATUALIZAR
+    [HttpPut]
+    [Route("{id}")]
+    public IActionResult Update(int Id, [FromBody] AlterDisciplineDto disciplineAlter)
+    {
+        var disciplineIn = _context.Disciplines.FirstOrDefault(x => x.Id.Equals(Id)); ;
+
+        if (disciplineIn == null)
+        {
+            return NotFound();
+        }
+
+        disciplineIn.TeacherId = disciplineAlter.TeacherId;
+        
+
+        _context.Disciplines.Update(disciplineIn);
+        _context.SaveChanges();
+
+        var disciplineOut = new OutDisciplineDto();
+        disciplineOut.Id = disciplineIn.Id;
+        disciplineOut.TeacherId = disciplineIn.TeacherId;
+        disciplineOut.NameDiscipline = disciplineIn.NameDiscipline;
+
+        return CreatedAtAction(nameof(AnswerController.Get), new { id = disciplineIn.Id }, disciplineOut);
+    }
+
+
+    //Endpoint LISTAR
+    [HttpGet]
+    public IActionResult Get()
+    {
+        var discipline = _context.Disciplines.ToList();
+        if (discipline == null)
+        {
+            return NotFound();                     //Se for nulo retorna erro
+        }
+        return Ok(discipline);
+    }
+
+
+    //Endpoint OBTER POR ID
+    [HttpGet]
+    [Route("{id}")]
+    public IActionResult Get(int Id)
+    {
+        var discipline = _context.Disciplines.FirstOrDefault(x => x.Id.Equals(Id));
+
+        if (discipline == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(discipline);
+    }
+
+
+    //Endpoint EXCLUIR
+    [HttpDelete]
+    [Route("{id}")]
+    public IActionResult DeleteDiscipline(int Id)
+    {
+        var discipline = _context.Disciplines.FirstOrDefault(x => x.Id.Equals(Id));
+
+        if (discipline == null)
+        {
+            return NotFound();
+        }
+
+        _context.Disciplines.Remove(discipline);                           //Chamando método
+        _context.SaveChanges();                           //Salvando
+
+        return NoContent();
+    }
+}
+
+    /*
     //Endpoint CRIAR
     [HttpPost]
     public ActionResult<Discipline> Create(Discipline discipline)
@@ -86,4 +182,5 @@ public class DisciplineController : ControllerBase
 
         return NoContent();
     }
-}
+    */
+
