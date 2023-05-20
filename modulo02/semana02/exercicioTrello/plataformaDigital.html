@@ -178,15 +178,15 @@
           </fieldset>
           <fieldset>
             <label for="email">Email</label>
-            <input id="email" type="email">
+            <input id="email" type="email" required>
           </fieldset>
           <fieldset>
             <label for="telefone">Telefone</label>
-            <input id="telefone" type="number">
+            <input id="telefone" type="number" pattern="[0-9]{10}" required>
           </fieldset>
           <fieldset>
             <label for="duvida">Dúvida</label>
-            <input id="duvida" type="text">
+            <textarea id="duvida" name="duvida" minlength="1" maxlength="500" rows="4" cols="50" required></textarea>
           </fieldset>
           <div class="botoes-form">
             <button id="btn-enviar">Enviar</button>

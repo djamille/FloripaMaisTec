@@ -29,6 +29,7 @@ body {
   }
   
   a:active {
+    color: #fcfcfc;
     text-decoration: none
     }
 
