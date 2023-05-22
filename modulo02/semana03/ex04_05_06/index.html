@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caculadora IMC</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel-"stylesheet" href="hitorico.html"/>
 </head>
 <body>
     <form class="calculadora">
@@ -16,15 +17,25 @@
         <input type="number" placeholder="Peso" id="peso" />
         <input type="number" placeholder="Altura" id="altura" />
         <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+        <ul>
+            <li><a href="historico.html">Histórico</a></li>
+        </ul>
 
         <p id="resultado">Resultado</p>
     </form>
     <script>
         function calcularIMC() {
-            var peso = document.getElementById('peso').value
-            var altura = document.getElementById('altura').value
+            let peso = document.getElementById('peso').value
+            let altura = document.getElementById('altura').value
 
-            var resultado = peso / (altura * altura)
+            let resultado = peso / (altura * altura)
+
+            // Local Storage
+            let historico = JSON.parse(localStorage.getItem('historico')) || [];
+            historico.push(resultado);
+            localStorage.setItem('historico', JSON.stringify(historico));
+
+            document.getElementById('resultado').textContent = resultado;
             
             //Exercicio 05 incluir condicionais que considerem a tabela de classificação do IMC
 
@@ -47,6 +58,8 @@
             else {
                 document.getElementById('resultado').innerHTML = "O seu IMC é: " +resultado.toFixed(2) + ", é considerado OBESIDADE GRAU 3. Você está acima do recomendado para a sua altura. Sugerimos consultar um nutricionista. "
             }
+
+            
         }
     </script>
 

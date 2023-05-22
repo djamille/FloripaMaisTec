@@ -1,0 +1,24 @@
+<html lang="pt-br">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de IMC</title>
+</head>
+<body>
+    <h1>Histórico de IMC</h1>
+    <ul id="listaHistorico"></ul>
+
+    <script>
+        let historico = JSON.parse(localStorage.getItem('historico')) || [];
+        
+        let listaHistorico = document.getElementById('listaHistorico');
+        historico.forEach(function(resultado) {
+            let listItem = document.createElement('li');
+            listItem.textContent = resultado;
+            listaHistorico.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
