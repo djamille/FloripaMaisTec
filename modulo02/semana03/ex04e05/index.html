@@ -1,0 +1,58 @@
+<!--Exercicio 04 Construa um formulário de calculo do IMC.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora IMC</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <form class="calculadora">
+        <h1>Calculadora de IMC</h1>
+
+        <input type="number" placeholder="Peso" id="peso" />
+        <input type="number" placeholder="Altura" id="altura" />
+        <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+
+        <p id="resultado">Resultado</p>
+    </form>
+    <script>
+        function calcularIMC() {
+            var peso = document.getElementById('peso').value
+            var altura = document.getElementById('altura').value
+
+            var resultado = peso / (altura * altura)
+            
+            //Exercicio 05 incluir condicionais que considerem a tabela de classificação do IMC
+
+            if (resultado < 18.5){
+                document.getElementById('resultado').innerHTML = "O seu IMC é: " +resultado.toFixed(2) + ", está ABAIXO DO PESO recomendado para a sua altura."
+                
+            }
+            else if(resultado >= 18.50 && resultado < 24.99){
+                document.getElementById('resultado').innerHTML = "O seu IMC é: " +resultado.toFixed(2) + ", é considerado PESO NORMAL para a sua altura."
+            }
+            else if(resultado >= 25.0 && resultado < 29.99){
+                document.getElementById('resultado').innerHTML = "O seu IMC é: " +resultado.toFixed(2) + ", é considerado SOBREPESO. Você está acima do recomendado para a sua altura. Sugerimos consultar um nutricionista. "
+            }
+            else if(resultado >= 30 && resultado < 34.99){
+                document.getElementById('resultado').innerHTML = "O seu IMC é: " +resultado.toFixed(2) + ", é considerado OBESIDADE GRAU 1. Você está acima do recomendado para a sua altura. Sugerimos consultar um nutricionista. "
+            }
+            else if(resultado >= 35 && resultado < 39.99){
+                document.getElementById('resultado').innerHTML = "O seu IMC é: " +resultado.toFixed(2) + ", é considerado OBESIDADE GRAU 2. Você está acima do recomendado para a sua altura. Sugerimos consultar um nutricionista. "
+            }
+            else {
+                document.getElementById('resultado').innerHTML = "O seu IMC é: " +resultado.toFixed(2) + ", é considerado OBESIDADE GRAU 3. Você está acima do recomendado para a sua altura. Sugerimos consultar um nutricionista. "
+            }
+
+            console.log("peso digitado", peso)
+            console.log("altura digitado", altura)
+            console.log("resultado", resultado)
+        }
+    </script>
+
+</body>
+</html>
