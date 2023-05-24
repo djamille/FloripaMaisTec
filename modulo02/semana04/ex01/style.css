@@ -1,0 +1,39 @@
+.calculadora {
+    width: 40%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    background-color: rgb(11, 31, 141);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    color: white;
+}
+
+.calculadora input {
+    width: 26%;
+    margin: 20px;
+    color: black;
+    border: 1px solid;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+}
+
+.calculadora button {
+    background-color: #bee9fa;
+    color: rgb(11, 31, 141);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    font-size: 18px;
+}
+
+#resultado {
+    font-size:  28px;
+    color: white;
+    font-weight: bold;
+}
