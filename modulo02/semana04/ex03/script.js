@@ -4,7 +4,7 @@ function somar() {
 
     let resultado = num1 + num2;
 
-    document.getElementById('resultado').innerText = resultado
+    alert("A soma dos dois números é: " + resultado);           //Exercicio 04 - Crie um botão em HTML e adicione um ouvinte de evento que exiba um alerta na tela quando o botão for clicado.
 }
 
 function diminuir() {
@@ -12,8 +12,7 @@ function diminuir() {
     let num2 = parseInt(document.getElementById('num2').value)
 
     let resultado = num1 - num2;
-
-    document.getElementById('resultado').innerText = resultado
+    alert("A diminuição dos dois números é: " + resultado);
 }
 
 function dividir() {
@@ -21,8 +20,7 @@ function dividir() {
     let num2 = parseInt(document.getElementById('num2').value)
 
     let resultado = num1 / num2;
-
-    document.getElementById('resultado').innerText = resultado
+    alert("A divasão entre os dois números é: " + resultado);
 }
 
 function multiplicar() {
@@ -30,6 +28,5 @@ function multiplicar() {
     let num2 = parseInt(document.getElementById('num2').value)
 
     let resultado = num1 * num2;
-
-    document.getElementById('resultado').innerText = resultado
+    alert("A divisão entre os dos dois números é: " + resultado);
 }
