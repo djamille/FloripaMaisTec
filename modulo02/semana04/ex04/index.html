@@ -1,0 +1,29 @@
+<!--Exercicio 03  Crie uma função que aceite dois números como argumentos e retorne a soma desses dois números.
+    Exercicio 04 - Crie um botão em HTML e adicione um ouvinte de evento que exiba um alerta na tela quando o botão for clicado.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+</head>
+<body>
+    <form class="calculadora">
+        <h1>Operações matemáticas</h1>
+
+        <input type="number" placeholder="Primeiro número" id="num1" />
+        <input type="number" placeholder="Segundo número" id="num2" />
+        <button type="button" onclick="somar()">Somar</button>
+        <button type="button" onclick="diminuir()">Diminuir</button>
+        <button type="button" onclick="multiplicar()">Multiplicar</button>
+        <button type="button" onclick="dividir()">Dividir</button>
+
+        <p id="resultado".></p>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
