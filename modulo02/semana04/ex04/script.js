@@ -4,6 +4,14 @@ function somar() {
 
     let resultado = num1 + num2;
 
+    // Local               Exercicio 05
+    let historico = JSON.parse(localStorage.getItem('historico')) || [];
+    historico.push(resultado);
+    localStorage.setItem('historico', JSON.stringify(historico));
+
+    document.getElementById('resultado').textContent = resultado;
+    
+
     alert("A soma dos dois números é: " + resultado);           //Exercicio 04 - Crie um botão em HTML e adicione um ouvinte de evento que exiba um alerta na tela quando o botão for clicado.
 }
 
