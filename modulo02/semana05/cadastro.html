@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Digital</title>
+    <link rel="stylesheet" href="./script.js">
+</head>
+<body>  <!--Exercicio 01 - O botão de criar conta deve abrir uma outra página com um formulário para criar um usuário-->
+    <form>
+        <fieldset>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+        </fieldset>
+        <fieldset>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password">
+        </fieldset>
+        <fieldset>
+            <label for="senhaC">Confirmar Senha</label>
+            <input id="senhaC" type="password">
+        </fieldset>
+        <div class="botoes-form">
+            <div>
+                <button type="submit" id="btn-cadastrar" onclick="return validarsenha()">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

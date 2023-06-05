@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma Digital</title>
+    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./cadastro.html">
+</head>
+<body>  <!--Exercicio 01 - Crie um formulário de login-->
+    <form>
+        <fieldset>
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+        </fieldset>
+        <fieldset>
+            <label for="senha">Senha</label>
+            <input id="senha" type="password">
+        </fieldset>
+        <div class="botoes-form">
+            <div>
+                <button type="submit" id="btn-enviar">Enviar</button>
+            </div>
+            <div>
+                <button type="submit" id="btn-criar" onclick="window.location.href='./cadastro.html'">Criar Conta</button>
+            </div>
+            <div>
+                <button type="submit" id="btn-esqueci">Esqueci a Senha</button>
+            </div>
+        </div>
+    </form>
+    
+    <script src="script.js"></script>
+</body>
+</html>
