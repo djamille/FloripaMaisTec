@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: rgb(255, 255, 255);
     color:  #07119b;
+    width: 100%;
   }
   
   header {
@@ -13,17 +14,14 @@ body {
     color: #fcfcfc;
   }
   
-  @media screen and (min-width: 1024px){
-    .header{
-      
-    }
-  }
-
-
   header > .logo > img {
     width: 55%;
   }
   
+  a{
+    color: unset;
+  }
+
   header nav {
     display: flex;
     align-items: center;
@@ -388,18 +386,6 @@ body {
     width: 95%;
   }
   
-  
-  @media screen and (max-width: 768px) {
-    header nav {
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-  
-    header nav a + a {
-      margin-left: unset;
-    }
-  }
-  
   /* Auxilio para visualização das seções */
   #oportunidades , #metodologia , #ementa ,
   #projetos , #depoimentos , #duvidas  {
@@ -431,20 +417,105 @@ body {
 
   #footer {
     display: flex;
-    justify-content:start;    
     background-color: #2727ff;
     font-family: 'Asap',sans-serif;
     font-size: 20px;
   }
 
-  footer .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-family: Catamaran, sans-serif;
-    background-color: #ff27c9;
-  }  
-
   .logoRodape{
     width: 20%;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    body{
+      width: 98%;
+    }
+
+    header{
+      justify-content: flex-start;
+    }
+
+    header > .logo > img {
+      width: 100%;
+    }
+
+    header .logo{
+      width: 25%;
+    }
+    
+    header nav {
+      flex-wrap: nowrap;
+      justify-content: center;
+      font-size: 13px;
+      width: 68%;
+      text-align: justify;
+    }
+
+    header nav a + a{
+      margin: 5px;
+    }
+
+    #central > .textoCentral > h1{
+      font-size: 90px;
+    }
+
+    #central > .textoCentral > h3{
+      font-size: 90px;
+    }
+
+    #central > .textoCentral > p{
+      font-size: 20px;
+    }
+
+    #oportunidades .card{
+      height: 379.85px;
+    }
+
+    #projetos .Projetos{
+      font-size: 13px;
+    }
+
+    #depoimentos .depDiv .card > iframe{
+      width: 220px;
+      height: 150px;
+    }
+
+    footer > header > #footer{
+      font-size: 15px;
+      text-align:end;
+      width: 70%;
+    }
+
+  }
+
+  
+  @media screen and (max-width: 1024px){
+    header{
+      width: 90%;
+    }
+
+    header > .logo > img {
+      width: 100%;
+    }
+
+    header .logo{
+      width: 25%;
+    }
+
+    header nav {
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      font-size: 18px;
+      width: 68%;
+      text-align: justify;
+    }
+
+    header nav a + a{
+      margin: 5px;
+    }
+
+    #oportunidades .card{
+      height: 280px;
+    }
   }
