@@ -1,7 +1,6 @@
-let senha = document.getElementById('senha');
-let senhaC = document.getElementById('senhaC');
-
 function validarSenha() {
+  let senha = document.getElementById('senha');
+  let senhaC = document.getElementById('senhaC');
     if (senha.value === senhaC.value) {
         senhaC.setCustomValidity("");
         return true;
