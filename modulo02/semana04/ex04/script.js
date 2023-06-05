@@ -20,6 +20,13 @@ function diminuir() {
     let num2 = parseInt(document.getElementById('num2').value)
 
     let resultado = num1 - num2;
+
+    let historico = JSON.parse(localStorage.getItem('historico')) || [];
+    historico.push(resultado);
+    localStorage.setItem('historico', JSON.stringify(historico));
+
+    document.getElementById('resultado').textContent = resultado;
+
     alert("A diminuição dos dois números é: " + resultado);
 }
 
@@ -28,6 +35,13 @@ function dividir() {
     let num2 = parseInt(document.getElementById('num2').value)
 
     let resultado = num1 / num2;
+
+    let historico = JSON.parse(localStorage.getItem('historico')) || [];
+    historico.push(resultado);
+    localStorage.setItem('historico', JSON.stringify(historico));
+
+    document.getElementById('resultado').textContent = resultado;
+
     alert("A divasão entre os dois números é: " + resultado);
 }
 
@@ -36,5 +50,12 @@ function multiplicar() {
     let num2 = parseInt(document.getElementById('num2').value)
 
     let resultado = num1 * num2;
+
+    let historico = JSON.parse(localStorage.getItem('historico')) || [];
+    historico.push(resultado);
+    localStorage.setItem('historico', JSON.stringify(historico));
+
+    document.getElementById('resultado').textContent = resultado;
+    
     alert("A divisão entre os dos dois números é: " + resultado);
 }
