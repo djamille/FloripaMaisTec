@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plataforma Digital</title>
-    <link rel="stylesheet" href="./script.js">
     <link rel="stylesheet" href="./cadastro.html">
 </head>
 <body>  <!--Exercicio 01 - Crie um formulário de login-->
@@ -20,7 +19,7 @@
         </fieldset>
         <div class="botoes-form">
             <div>
-                <button type="submit" id="btn-enviar">Enviar</button>
+                <button type="submit" id="btn-enviar" onclick="validarLogin()">Enviar</button>
             </div>
             <div>
                 <button type="submit" id="btn-criar" onclick="window.location.href='./cadastro.html'">Criar Conta</button>
@@ -31,6 +30,6 @@
         </div>
     </form>
     
-    <script src="script.js"></script>
+    <script src="./service/login.js"></script>
 </body>
 </html>

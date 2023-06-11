@@ -1,0 +1,89 @@
+header {
+  background-color: rgb(219, 199, 18);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  padding-right: 8px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 150px;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 80%;
+  background-color: rgb(165, 42, 42);
+  flex-direction: column;
+  height: 800px;
+}
+
+#divBusca {
+  display: flex;
+  background-color: #E0EEEE;
+  border: solid 2px #5F9EA0;
+  border-radius: 10px;
+  width: 700px;
+  height: 45px;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#busca {
+  width: 700px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-size: 40px;
+  border: none;
+  vertical-align: text-top;
+}
+
+#btnBusca {
+  border: none;
+  height: 45px;
+  border-radius: 0 7px 7px 0;
+  width: 100px;
+  font-weight: bold;
+  background: #5F9EA0;
+  font-size: 40px;
+}
+
+#album {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+aside {
+  background-color: rgb(94, 178, 235);
+  float: left;
+  width: 20%;
+  height: 800px;
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+img {
+  width: 100px;
+}
