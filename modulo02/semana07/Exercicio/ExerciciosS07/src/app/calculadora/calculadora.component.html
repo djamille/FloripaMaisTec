@@ -1,0 +1,18 @@
+<!--Exercicio 03-->
+
+<h3>Exercício 03</h3>
+<p>Digite um número:</p>
+<input [(ngModel)]="num1">
+<p>Digite o segundo número:</p>
+<input [(ngModel)]="num2">
+
+<button (click)="somar()">Somar</button>
+<button (click)="diminuir()">Diminuir</button>
+<button (click)="multiplicar()">Multiplicar</button>
+<button (click)="dividir()">Dividir</button>
+<button (click)="limpar()">Limpar</button>
+
+<h5>Resultado</h5>
+<span>{{resultado}}</span>
+
+<p>---------------------------------</p>
