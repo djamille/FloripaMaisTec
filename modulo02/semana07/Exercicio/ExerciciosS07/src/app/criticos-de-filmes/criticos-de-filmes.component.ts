@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-criticos-de-filmes',
@@ -11,14 +11,17 @@ export class CriticosDeFilmesComponent {
 
   constructor() {
     this.avaliacaoForm = new FormGroup({
-      nome: new FormGroup(''),
-      email: new FormGroup(''),
-      nomeFilme: new FormGroup(''),
-      avaliacao: new FormGroup(''),
+      "nome": new FormControl('',Validators.required),
+      "email": new FormControl('',[Validators.required, Validators.email]),
+      "nomeFilme": new FormControl('',Validators.required),
+      "avaliacao": new FormControl('',Validators.required),
     });
   }
 
   onSubmit() {
-    console.log(this.avaliacaoForm.value);
+    console.log(this.avaliacaoForm.get("nome")?.value)
+    console.log(this.avaliacaoForm.get("email")?.value)
+    console.log(this.avaliacaoForm.get("nomeFilme")?.value)
+    console.log(this.avaliacaoForm.get("avaliacao")?.value)
   }
 }
