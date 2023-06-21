@@ -1,0 +1,28 @@
+<form [formGroup]="avaliacaoForm" (ngSubmit)="enviarFormulario()">
+  <label for="nome">Insira seu nome:</label>
+  <br>
+  <input id="nome" type="text" formControlName="nome">
+  <br>
+
+  <label for="email">Insira seu email:</label>
+  <br>
+  <input id="email" type="text" formControlName="email">
+  <br>
+
+  <label for="nomeFilme">Insira o nome do filme:</label>
+  <br>
+  <input id="nomeFilme" type="text" formControlName="nomeFilme">
+  <br>
+
+  <label for="avaliacao">Insira sua avaliação:</label>
+  <br>
+  <input id="avaliacao" type="number" formControlName="avaliacao">
+  <br>
+
+  <button type="submit" [disabled]="avaliacaoForm.invalid">Enviar avaliação</button>
+  <br>
+  <button type="button">Cancelar avaliação</button>
+
+<p>---------------------------------</p>
+
+</form>
