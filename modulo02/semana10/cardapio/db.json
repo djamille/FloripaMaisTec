@@ -1,0 +1,78 @@
+{
+  "comidas": [
+    {
+      "titulo": "Bife de Filé Mignon com Molho de Vinho Tinto",
+      "valor": 60,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/food-1.jpg"
+    },
+    {
+      "titulo": "Risoto de Cogumelos Selvagens",
+      "valor": 45,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/food-1.jpg"
+    },
+    {
+      "titulo": "Salmão Grelhado com Legumes Assados",
+      "valor": 55,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/food-1.jpg"
+    },
+    {
+      "titulo": "Frango à Parmegiana com Purê de Batatas",
+      "valor": 40,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/food-1.jpg"
+    },
+    {
+      "titulo": "Espaguete à Bolonhesa",
+      "valor": 35,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/food-1.jpg"
+    },
+    {
+      "titulo": "Hambúrguer de Quinoa com Batata Doce Frita",
+      "valor": 30,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/food-1.jpg"
+    }
+  ],
+  "bebidas": [
+    {
+      "titulo": "Whisky",
+      "valor": 60,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/drink-1.jpg"
+    },
+    {
+      "titulo": "Cerveja",
+      "valor": 45,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/drink-1.jpg"
+    },
+    {
+      "titulo": "Vinho",
+      "valor": 55,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/drink-1.jpg"
+    },
+    {
+      "titulo": "Suco natural",
+      "valor": 40,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/drink-1.jpg"
+    },
+    {
+      "titulo": "Refrigerante",
+      "valor": 35,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/drink-1.jpg"
+    },
+    {
+      "titulo": "Suco Natural",
+      "valor": 30,
+      "descricao": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor!",
+      "urlImagem": "assets/img/drink-1.jpg"
+    }
+  ]
+}

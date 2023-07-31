@@ -1,0 +1,24 @@
+<div class="container my-5">
+  <div class="row d-flex">
+    <div
+      *ngFor="let item of bebidaLista$ | async as lista"
+      class="col-12 col-md-6 col-lg-4 col-xl-3"
+    >
+      <div class="card mb-3 col p-0">
+        <img
+          [src]="item.urlImagem"
+          class="card-img-top"
+          alt="Imagem do produto"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.titulo }}</h5>
+          <p class="card-text">R$ {{ item.valor }}</p>
+          <p class="card-text">
+            {{ item.descricao }}
+          </p>
+          <a href="#" class="btn btn-primary">Adicionar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
